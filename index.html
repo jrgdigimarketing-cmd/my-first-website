@@ -1,1 +1,339 @@
-<h1>MASTER RESET</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>James Sketch Tours</title>
+<meta name="description" content="Guided sketching tours that combine art, nature, and exploration. Join James Sketch Tours and discover beautiful locations through drawing.">
+
+<style>
+:root {
+    --primary: #2f5d50;
+    --secondary: #f6f3ee;
+    --accent: #d68b45;
+    --dark: #222;
+    --light: #ffffff;
+    --max-width: 1200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--dark);
+    background: var(--secondary);
+}
+
+.container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80')
+        center/cover no-repeat;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--accent);
+    color: white;
+    padding: 0.9rem 1.8rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-title h2 {
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.about-grid,
+.tour-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-card,
+.tour-card,
+.contact-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.about-image,
+.tour-image {
+    min-height: 300px;
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-image {
+    background-image: url('https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&q=80');
+}
+
+.tour-image {
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80');
+}
+
+.tour-features {
+    margin-top: 1rem;
+}
+
+.tour-features li {
+    margin-bottom: 0.7rem;
+    list-style: none;
+}
+
+.contact-wrapper {
+    max-width: 700px;
+    margin: auto;
+}
+
+.contact-card {
+    text-align: center;
+}
+
+.contact-card p {
+    margin: 1rem 0;
+}
+
+footer {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .about-grid,
+    .tour-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+        <div class="logo">James Sketch Tours</div>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#tours">Tours</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>Discover Places Through Sketching</h1>
+            <p>
+                Join guided sketch walks and outdoor drawing adventures.
+                Slow down, observe, and capture beautiful landscapes,
+                architecture, and nature with pencil and sketchbook.
+            </p>
+            <a href="#contact" class="btn">Book a Tour</a>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <div class="container">
+        <div class="section-title">
+            <h2>About James Sketch Tours</h2>
+            <p>Art, travel, and exploration combined.</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <p>
+                    James Sketch Tours offers guided sketching experiences
+                    designed for beginners and experienced artists alike.
+                    Rather than rushing from location to location, we take
+                    time to observe, sketch, and connect with our surroundings.
+                </p>
+
+                <br>
+
+                <p>
+                    Whether exploring coastal landscapes, urban streets,
+                    botanical gardens, or hidden local gems, each tour
+                    encourages creativity while building confidence in
+                    observational drawing.
+                </p>
+            </div>
+
+            <div class="about-image"></div>
+        </div>
+    </div>
+</section>
+
+<section id="tours">
+    <div class="container">
+        <div class="section-title">
+            <h2>Sketch Tours</h2>
+            <p>Relaxed, guided outdoor sketching experiences.</p>
+        </div>
+
+        <div class="tour-grid">
+            <div class="tour-image"></div>
+
+            <div class="tour-card">
+                <h3>Nature & Urban Sketch Walks</h3>
+
+                <ul class="tour-features">
+                    <li>✓ Guided sketching sessions</li>
+                    <li>✓ Scenic outdoor locations</li>
+                    <li>✓ Suitable for all skill levels</li>
+                    <li>✓ Small, friendly groups</li>
+                    <li>✓ Learn observation and sketching techniques</li>
+                    <li>✓ Bring your own sketchbook and materials</li>
+                </ul>
+
+                <br>
+
+                <p>
+                    Tours typically last 2–3 hours and include multiple
+                    sketching stops with practical guidance and plenty
+                    of time to draw at your own pace.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Contact</h2>
+            <p>Ready to join a sketch tour?</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="contact-card">
+                <h3>Get in Touch</h3>
+
+                <p>
+                    Contact James Sketch Tours to learn about upcoming
+                    sketch walks, private tours, and special events.
+                </p>
+
+                <p>
+                    Email: hello@jamessketchtours.com<br>
+                    Phone: +27 00 000 0000
+                </p>
+
+                <a href="mailto:hello@jamessketchtours.com" class="btn">
+                    Send an Email
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 James Sketch Tours. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
